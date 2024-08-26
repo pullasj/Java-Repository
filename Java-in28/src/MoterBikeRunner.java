@@ -7,16 +7,24 @@ public class MoterBikeRunner {
     dukati.speed();
     honda.speed();
 
-    dukati.speed = 100;
-    honda.speed = 81;
-    System.out.println(dukati.speed);
-    System.out.println(honda.speed);
+    dukati.setSpeed(100);
+    honda.setSpeed(81);
+    dukati.printspeed();
+    honda.printspeed();
 
-    dukati.speed = 20;
-    honda.speed = 81;
+    dukati.printspeed();
+    // increasing speed by 100
+        dukati.increaseSpeed(100);
+        dukati.printspeed();
 
-        System.out.println(dukati.speed);
-        System.out.println(honda.speed);
+    // decreasing speed by 50
+        dukati.decreaseSpeed(50);
+        dukati.printspeed();
 
+
+        //Constructor class
+        constructorMoterbike hero = new constructorMoterbike(185);
+        hero.getspeed();
     }
+
 }
